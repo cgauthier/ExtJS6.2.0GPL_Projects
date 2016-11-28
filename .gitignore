@@ -1,0 +1,10 @@
+.sencha
+.sencha/*
+build
+build/*
+ext
+ext*
+ext-6.2.-gpl
+ext-6.2.-gpl*
+.project
+workspace.json
