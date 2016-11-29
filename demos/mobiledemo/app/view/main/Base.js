@@ -24,6 +24,7 @@ Ext.define('MobileDemo.view.main.Base', {
         hideBackButton: false,
         hideContextMenuButton: false
     },
+    menuCfg: null,
     appTitle: null,
     typeOfApp: "static",
     previous: null,

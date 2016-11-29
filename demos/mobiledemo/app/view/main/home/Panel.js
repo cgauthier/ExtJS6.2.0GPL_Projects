@@ -6,6 +6,9 @@ Ext.define('MobileDemo.view.main.home.Panel', {
         'MobileDemo.view.main.home.PanelController'
     ],
     controller: "home-panel",
+    menuCfg: {
+        "home": false
+    },
     initialize: function() {
         var me = this;
 

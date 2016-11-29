@@ -5,7 +5,8 @@ Ext.define('MobileDemo.view.main.MainController', {
         'MobileDemo.view.main.nav.Menu'
     ],
     appVars: {
-        loginKey: "mobilenavdemo"
+        loginKey: "mobilenavdemo",
+        menu: null
     },
     init: function(view) {
         var v = view;
@@ -28,6 +29,8 @@ Ext.define('MobileDemo.view.main.MainController', {
                         Ext.Viewport.setMenu(menu,{
                             side:'right'
                         });                        
+                        
+                        scope.ctrl.appVars.menu = menu;
                         
                         // CG: 11/28/2016
                         // the loginKey for this demo is for now all that's being used

@@ -31,6 +31,7 @@ All of this is work in progress at the moment..
 -	logout
 -   dynamic pages (basic for now, to demonstrate navigation)
 -	navigation going forward and backward is now working across a mix of static and dynamic pages
+-	context menu items are visible/hidden via a menuCfg object and a setVisibleItems method in the Menu.js class
 
 ### To do
 
@@ -39,6 +40,8 @@ All of this is work in progress at the moment..
 -	reuse some of the pages like a search which can be chained dynamically
 -	create a logo for the home page (minor detail)
 -	create an about page and add it to the context menu.
+-	enhance the layout and formatting, currently based on google's material design from ExtJS 6.2 theme
+-	set entitlements based on login
 
 ### Later down the road
 -	Use this base code to create an app (iPhone, Android)

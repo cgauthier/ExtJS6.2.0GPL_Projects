@@ -40,5 +40,28 @@ Ext.define('MobileDemo.view.main.nav.Menu', {
         me.setConfig("defaults", defaults);
         me.setConfig("items", items);
         me.callParent(arguments);
+    },
+    setVisibleItems: function(menuCfg) {
+        var me = this, itemStr, itemTpl, item, items, x, l;
+        itemTpl = 'button[action="{0}"]';
+        
+        if(menuCfg && Ext.isObject(menuCfg) && Ext.Object.getSize(menuCfg)) {
+            for(menuAction in menuCfg) {
+                itemStr = Ext.String.format(itemTpl, menuAction);
+                item = me.down(itemStr);
+                if(item) {
+                    item.setHidden(!menuCfg[menuAction]);
+                }
+            }
+        } else {
+            items = me.getItems().items;
+            x = 0; l = items.length;
+            if(l) {
+                 for(x = 0; x < l; x++) {
+                     items[x].setHidden(false);
+                 }
+            }
+        }
     }
+    
 });

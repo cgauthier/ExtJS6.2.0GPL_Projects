@@ -5,7 +5,7 @@ Ext.define('MobileDemo.view.main.nav.TopToolbarController', {
     init: function(view) {
         var me = this;
         var v = view;
-
+        
         function buttonBackFunction (btn) {
             var scope, main, panel, fn, newFn;
             scope = this;
@@ -43,6 +43,12 @@ Ext.define('MobileDemo.view.main.nav.TopToolbarController', {
         };
 
         function buttonContextFunction (btn) {
+            var context, main, menuCfg, menu;
+            context = this.view.up('app-base');
+            main = context.up('app-main');
+            menuCfg = context.menuCfg;
+            menu = main.getController().appVars.menu;
+            menu.setVisibleItems(menuCfg);
             Ext.Viewport.toggleMenu('right');
         };
 
