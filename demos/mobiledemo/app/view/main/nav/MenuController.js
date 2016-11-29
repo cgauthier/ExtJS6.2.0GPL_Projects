@@ -13,15 +13,14 @@ Ext.define('MobileDemo.view.main.nav.MenuController', {
 
         function buttonHomeFunction (cmp) {
             var app = this.mainScope.view;
-            
-            // this.ctrl.cleanUpDynamicPanels(this.view, tabpanel);
+            this.ctrl.cleanUpDynamicPanels(this);
             Ext.Viewport.toggleMenu('right');
             app.setActiveItem(1);
         };
 
         function buttonLogoutFunction (cmp) {
             var app = this.mainScope.view;
-            // this.ctrl.cleanUpDynamicPanels(this.view, tabpanel);
+            this.ctrl.cleanUpDynamicPanels(this);
             window.localStorage.removeItem(this.mainScope.loginKey);
             Ext.Viewport.toggleMenu('right');
             app.setActiveItem(0);            
@@ -45,23 +44,14 @@ Ext.define('MobileDemo.view.main.nav.MenuController', {
         me.callParent(arguments);
     },
     
-    // CG: 11/28/2016
-    // Dormant code, once I start having panels added dynamically
-    // this code will allow me to clean them out if I decide to either go home or logout
-    // ensures they are removed and destroyed.
-    // these are always panels based on 'app-base'
-    // if these have any dom events attached to html elements
-    // they should have their 'beforeDestroy' event attached and ready to clean these dom events out
-    // the signature will change in this new version
-    cleanUpDynamicPanels: function(view, tabpanel) {
-        var tabpanel = view.up().down('app-tabpanel');
-        var items = Ext.ComponentQuery.query('app-base');
+    cleanUpDynamicPanels: function(scope) {
+        var main = scope.mainScope.view;
+        var items = Ext.ComponentQuery.query('app-base', main);
         var itemsToRemove = [];
         var x, l = items.length;
-
         for(x = 0; x < l; x++) {
             if(items[x].typeOfApp != "static") {
-                tabpanel.remove(items[x]);
+                main.remove(items[x]);
             }
         }
 

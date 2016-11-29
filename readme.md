@@ -29,9 +29,11 @@ All of this is work in progress at the moment..
 -	context menu
 -	return home
 -	logout
+-   dynamic pages (basic for now, to demonstrate navigation)
+-	navigation going forward and backward is now working across a mix of static and dynamic pages
 
 ### To do
--	add a few dynamic pages
+
 -	have some of these pages load content via an ajax call
 -	have parameters involving adding callback to back button for extra code cleanup
 -	reuse some of the pages like a search which can be chained dynamically
@@ -45,4 +47,4 @@ This list is far from complete, more ideas will come to me as I go along.
 
 #### Testing this app
  Obviously, this is a mobile application, so, it is best to test it with a mobile phone, however, you can use Chrome in developer/debugger mode and change your view to a mobile phone, which is what I mostly do for testing this app at this current stage of development.
-
+ 

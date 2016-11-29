@@ -20,6 +20,7 @@ Ext.define('MobileDemo.view.main.Main', {
         Ext.apply(me, cfg);
         me.callParent(arguments);        
     },
+    nav: {},    
     initialize: function() {
         var me = this;
 
@@ -28,10 +29,12 @@ Ext.define('MobileDemo.view.main.Main', {
         // at this level, this will be important when mixing
         // static and dynamic pages for navigation
         var items = [{
-            xtype: 'login-panel'
+            xtype: 'login-panel',
+            id: "login"
         }, {
             xtype: 'home-panel',
-            appTitle: 'Home Page - Prototype'
+            appTitle: 'Home Page - Prototype',
+            id: "home"
         }];
         
         me.setConfig("items", items);

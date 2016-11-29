@@ -1,6 +1,9 @@
 Ext.define('MobileDemo.view.main.Base', {
     extend: 'Ext.Panel',
     xtype: 'app-base',
+    mixins: [
+        'MobileDemo.mixin.Nav'
+    ],
     requires: [
         'Ext.layout.VBox',
         'MobileDemo.view.main.nav.TopToolbar'
@@ -22,11 +25,10 @@ Ext.define('MobileDemo.view.main.Base', {
         hideContextMenuButton: false
     },
     appTitle: null,
+    typeOfApp: "static",
+    previous: null,
     // CG: 11/28/2016
-    // dormant for now, will be used when dealing with 
-    // dynamic panels 
-    // typeOfApp: "static",
-    // previous: null,
+    // dormant for now 
     // onBackEvent: null, 
     initialize: function() {
         var me = this;

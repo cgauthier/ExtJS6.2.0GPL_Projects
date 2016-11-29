@@ -6,38 +6,40 @@ Ext.define('MobileDemo.view.main.nav.TopToolbarController', {
         var me = this;
         var v = view;
 
-        // CG: 11/28/2016
-        // Porting this code from a previous project
-        // will allow me to not only go back to the previous panel
-        // but will also allow me to use a callback if there are
-        // extra code to provide for the target panel on the way back
-        // maybe reloading data, etc..
         function buttonBackFunction (btn) {
-            // var toolbar = this.view;
-            // var panel = toolbar.up('app-base');
-// 
-            // var fn = function(panel) {
-                // var tabpanel = panel.up();
-                // var nav = tabpanel.nav;
-                // var thisnav = nav[panel.id];
-                // var previous = thisnav.previous;
-                // previous.navDir = "backward";
-                // tabpanel.setActiveItem(previous);
-// 
-                // if(panel.typeOfApp != "static") {
-                    // window.setTimeout(function() {
-                        // tabpanel.remove(panel);
-                    // }, 250)
-                // }
-            // }
-// 
-            // var newFn = fn.bind(panel, panel); // testing.
-// 
-            // if(panel.onBackEvent) {
-                // panel.onBackEvent(newFn);
-            // } else {
-                // fn(panel);
-            // }
+            var scope, main, panel, fn, newFn;
+            scope = this;
+            main = scope.view.up('app-main');
+            panel = scope.view.up();
+            
+            fn = function(main, scope) {
+                var panel, nav, previous, thisnav, appmain;
+                appmain = main;
+                panel = this;
+                // CG: 11/28/2016
+                // to be used when onBackEvent is implemented
+                // nav = appmain.nav; 
+                previous = panel.previous;
+                // CG: 11/28/2016
+                // to be used when onBackEvent is implemented
+                // previous.navDir = "backward"; 
+                appmain.setActiveItem(previous);                    
+                if(panel.typeOfApp != "static") {
+                    window.setTimeout(function() {
+                        appmain.remove(panel);
+                    }, 250)
+                }
+            };
+ 
+            newFn = fn.bind(panel, main, scope); 
+ 
+            // CG: 11/28/2016
+            // onBackEvent is currently dormant
+            if(panel.onBackEvent) {
+                panel.onBackEvent(newFn);
+            } else {
+                newFn();
+            }
         };
 
         function buttonContextFunction (btn) {

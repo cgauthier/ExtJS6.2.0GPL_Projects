@@ -1,13 +1,22 @@
 Ext.define('MobileDemo.view.main.home.Panel', {
     extend: 'MobileDemo.view.main.Base',
     xtype: 'home-panel',
+    requires: [
+        'Ext.Button',
+        'MobileDemo.view.main.home.PanelController'
+    ],
+    controller: "home-panel",
     initialize: function() {
         var me = this;
 
         var items = [{
-            xtype: 'panel',
-            html: 'test home panel',
-            flex: 1
+            xtype: 'button',
+            text: 'Simple Dynamic Page Scaffolding',
+            action: 'simpledynamicpage'
+        }, {
+            xtype: 'button',
+            text: 'Debugger;',
+            action: 'debug'
         }];
 
         me.toolbarCfg = {
