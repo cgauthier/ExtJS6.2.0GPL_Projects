@@ -42,6 +42,10 @@ All of this is work in progress at the moment..
 -	create an about page and add it to the context menu.
 -	enhance the layout and formatting, currently based on google's material design from ExtJS 6.2 theme
 -	set entitlements based on login
+-	create a system where each page/widget can subscribe on how they can refresh their data once they have been loaded
+	pages which are created dynamically always have the latest data, but they may require polling or a refresh button, or the use of 'pull-down' to force a refresh
+	pages which are static may have the same need
+	when working with iPhone/Android, push notification can also lead to new data made available.
 
 ### Later down the road
 -	Use this base code to create an app (iPhone, Android)
