@@ -46,6 +46,7 @@ All of this is work in progress at the moment..
 	pages which are created dynamically always have the latest data, but they may require polling or a refresh button, or the use of 'pull-down' to force a refresh
 	pages which are static may have the same need
 	when working with iPhone/Android, push notification can also lead to new data made available.
+-	create a log page with steps and errors which can be viewed in the app and can be shown to those with developer entitlement	
 
 ### Later down the road
 -	Use this base code to create an app (iPhone, Android)
