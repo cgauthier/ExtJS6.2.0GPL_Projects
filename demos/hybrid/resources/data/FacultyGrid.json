@@ -1,0 +1,15 @@
+{
+	"data": [{
+		"member": "Clark Kent",
+		"role": "Speaker"
+	}, {
+		"member": "Barry Allen",
+		"role": "Presenter"
+	}, {
+		"member": "Hal Jordan",
+		"role": "Moderator"
+	}, {
+		"member": "Diana Prince",
+		"role": "Panelist"
+	}]
+}
