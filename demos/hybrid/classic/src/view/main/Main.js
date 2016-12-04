@@ -17,13 +17,8 @@ Ext.define('HyBrid.view.main.Main', {
         'Ext.layout.container.VBox',
         'HyBrid.view.main.Header',
         'HyBrid.view.main.Content',
-        'HyBrid.view.main.pages.QA',
-        'HyBrid.view.main.pages.Agenda',
-        'HyBrid.view.main.pages.Archive',
-        'HyBrid.view.main.pages.Events',
-        'HyBrid.view.main.pages.EventSetup',
         'HyBrid.view.main.pages.Home',
-        'HyBrid.view.main.pages.Presentations'
+        'HyBrid.view.main.pages.GridDemo'
     ],
     initComponent: function() {
         var me = this;

@@ -1,6 +1,6 @@
 
 body {
-  font-family:Open sans, Helvetica Neue, Arial, sans-serif;
+  font-family:Lato, Helvetica Neue, Arial, sans-serif;
   font-size: 14px;
   letter-spacing: 0.3px;
 }
@@ -31,8 +31,9 @@ body, .x-border-layout-ct  {
 
 
 h1,h2,h3,h4,h5,h6{
-    font-family:Montserrat, Helvetica Neue, Arial, sans-serif;
+    font-family:Oswald, Helvetica Neue, Arial, sans-serif;
     letter-spacing: 0.3px;
+    color: rgb(61, 111, 24)!important;
 }
 
 h1 {
@@ -44,20 +45,21 @@ h1 {
   font-size: 1.2em;
   text-align: center;
   padding-top: 10px;
+  color: rgb(61, 111, 24)!important;
 }
 
 .default-button {
   background-color: transparent!important;
   border: 0px!important;
-  color: #000;
+  color: rgb(61, 111, 24)!important;
 }
 
 .default-button .x-btn-icon-el {
-  color: #000;
+  color: rgb(61, 111, 24)!important;
 }
 
 .default-button .x-btn-inner {
-  color: #000;
+  color: rgb(61, 111, 24)!important;
 }
 
 .presentations-grid-edit {
@@ -77,6 +79,7 @@ h1 {
 
 .project-grid-format .x-columm-header-text-inner, .project-grid-format .x-columm-header-text {
   font-weight: bold!important;
+  color: rgb(61, 111, 24)!important;
 }
 
 .project-grid-format .x-column-header-inner {
@@ -98,7 +101,7 @@ h1 {
 }
 
 .project-grid-format .action-class {
-  color: #337ab7!important;
+  color: rgb(61, 111, 24)!important;
   display: block;
   cursor: pointer!important;
 }
@@ -144,3 +147,40 @@ h1 {
   display:none;
 }
 
+
+
+.form-input-textfield .x-form-trigger-wrap {
+  border-radius: 8px!important;
+  -webkit-border-radius: 8px!important;
+  padding: 0px 5px;
+}
+
+.form-input-textfield input {
+  font-size: 1.2em;
+  padding: 2px 5px!important;
+}
+    
+.form-label {
+  font-weight:bold;
+}   
+
+.action-button {
+  background-color: rgb(179, 0, 0)!important;
+  border: 0px!important;
+  color: #fff;
+  border-radius: 8px!important;
+  -webkit-border-radius: 8px!important;
+}
+
+.action-button:hover {
+  background-color: rgb(99, 0, 0)!important;
+}
+
+
+.action-button .x-btn-icon-el {
+  color: #fff;
+}
+
+.action-button .x-btn-inner {
+  color: #fff;
+}

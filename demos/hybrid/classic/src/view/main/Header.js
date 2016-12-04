@@ -23,7 +23,7 @@ Ext.define('HyBrid.view.main.Header', {
             xtype: 'button',
             action: 'menutoggle',
             cls: 'default-button',
-            iconCls: 'x-fa fa-arrow-left'
+            iconCls: 'x-fa fa-backward'
         }];
         
         me.callParent(arguments);

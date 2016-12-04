@@ -1,6 +1,6 @@
-Ext.define('HyBrid.view.main.pages.presentations.Grid', {
+Ext.define('HyBrid.view.main.pages.griddemo.Grid', {
     extend: 'Ext.grid.Panel',
-    xtype: 'presentations-grid',
+    xtype: 'griddemo-grid',
     requires: [
         "Ext.form.field.Text",
         'Ext.layout.container.Border',
@@ -40,8 +40,8 @@ Ext.define('HyBrid.view.main.pages.presentations.Grid', {
             header: 'Session',
             width: 250
         }, {
-            dataIndex: 'faculty_name',
-            header: 'Faculty',
+            dataIndex: 'participants_name',
+            header: 'Participants',
             width: 200,
             renderer: function(val) {
                var str = [];
@@ -53,10 +53,10 @@ Ext.define('HyBrid.view.main.pages.presentations.Grid', {
             }
         }, {
             dataIndex: 'room',
-            header: 'room',
+            header: 'Venue',
             width: 125
         }, {
-            dataIndex: 'day',
+            dataIndex: 'Day',
             header: 'day',
             width: 60,
             renderer: function(val, meta) {
@@ -72,13 +72,13 @@ Ext.define('HyBrid.view.main.pages.presentations.Grid', {
                 meta.classes.push('action-class');
             },
             items: [{
-                iconCls: "x-fa fa-cog action-class",
+                iconCls: "x-fa fa-edit action-class",
                 handler: function(view, rowIndex, colIndex, cfg, e, rec, rowEl) {
-                    this.view.down('content-title').setTitle('Edit Presentation');
-                    var presentations = view.up('pages-presentations');
-                    var form = presentations.down('presentations-form');
+                    this.view.down('content-title').setTitle('Edit Record');
+                    var griddemo = view.up('pages-griddemo');
+                    var form = griddemo.down('griddemo-form');
                     form.rec = rec;
-                    presentations.getLayout().setActiveItem(form);  
+                    griddemo.getLayout().setActiveItem(form);  
                 }.bind(me.mainScope)
             }]
         }];        

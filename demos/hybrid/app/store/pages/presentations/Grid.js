@@ -3,7 +3,7 @@ Ext.define('HyBrid.store.pages.presentations.Grid', {
     model: "HyBrid.model.pages.presentations.Grid",
     proxy: {
         type: 'ajax',
-        url: 'resources/data/PresentationsGrid.json',
+        url: 'resources/data/GridDemo.json',
         reader: {
             type: 'json',
             rootProperty: 'data'

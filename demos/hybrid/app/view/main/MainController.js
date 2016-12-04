@@ -40,7 +40,7 @@ Ext.define('HyBrid.view.main.MainController', {
                                 scope: contentMenu,
                                 callback: ctrl.showPanel
                             });
-                            btn.setIconCls('x-fa fa-arrow-left');
+                            btn.setIconCls('x-fa fa-backward');
                             
                         } else {
                             
@@ -50,7 +50,7 @@ Ext.define('HyBrid.view.main.MainController', {
                                 scope: contentMenu,
                                 callback: ctrl.hidePanel
                             });
-                            btn.setIconCls('x-fa fa-arrow-right');
+                            btn.setIconCls('x-fa fa-forward');
                         }
                     },
                     scope: scope

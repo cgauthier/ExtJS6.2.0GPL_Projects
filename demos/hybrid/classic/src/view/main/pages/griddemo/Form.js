@@ -1,6 +1,6 @@
-Ext.define('HyBrid.view.main.pages.presentations.Form', {
+Ext.define('HyBrid.view.main.pages.griddemo.Form', {
     extend: 'Ext.form.Panel',
-    xtype: 'presentations-form',
+    xtype: 'griddemo-form',
     requires: [
         'Ext.layout.container.HBox',
         'Ext.panel.Panel',
@@ -8,7 +8,7 @@ Ext.define('HyBrid.view.main.pages.presentations.Form', {
         'Ext.layout.container.Anchor',
         'Ext.form.field.Text',
         'Ext.form.field.Checkbox',
-        'HyBrid.view.main.pages.presentations.form.FacultyGrid'
+        'HyBrid.view.main.pages.presentations.form.ParticipantsGrid'
     ],
     mainScope: null,
     rec: null,
@@ -22,6 +22,7 @@ Ext.define('HyBrid.view.main.pages.presentations.Form', {
 
         me.items = [{
             xtype: 'panel',
+            scrollable: true,
             flex: 2,
             layout: {
                 type: 'anchor',
@@ -50,15 +51,12 @@ Ext.define('HyBrid.view.main.pages.presentations.Form', {
             }, {
                 name: 'session',
                 fieldLabel: "Session"
-            }, {
-                name: 'cme',
-                fieldLabel: "CME"
             }],
             bbar: {
                 xtype: 'toolbar',
                 items: [{
                     xtype: 'button',
-                    text: 'Save Presentation',
+                    text: 'Save Form',
                     action: "save",
                     cls: 'action-button',
                     margin: "0 10"                
@@ -70,6 +68,7 @@ Ext.define('HyBrid.view.main.pages.presentations.Form', {
         }, {
             xtype: 'container',
             flex: 1,
+            scrollable: true,
             layout: {
                 type: 'anchor',
                 anchor: '100%'
@@ -89,7 +88,7 @@ Ext.define('HyBrid.view.main.pages.presentations.Form', {
                 margin: "2 10",
                 name: 'presentation_id'
             }, {
-                xtype: 'form-faculty-grid',
+                xtype: 'form-participants-grid',
                 anchor: '100%'
             }, {
                 xtype: 'toolbar',

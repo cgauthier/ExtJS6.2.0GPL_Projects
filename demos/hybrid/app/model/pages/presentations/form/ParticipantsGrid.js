@@ -1,4 +1,4 @@
-Ext.define('HyBrid.model.pages.presentations.form.FacultyGrid', {
+Ext.define('HyBrid.model.pages.presentations.form.ParticipantsGrid', {
     extend: 'Ext.data.Model',
     fields: [{
         name: "member", type: 'string'        

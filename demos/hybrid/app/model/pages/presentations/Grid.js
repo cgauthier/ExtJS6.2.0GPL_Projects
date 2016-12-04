@@ -3,9 +3,7 @@ Ext.define('HyBrid.model.pages.presentations.Grid', {
     fields: [{
         name: "start_time", type: 'string'        
     }, {
-        name: "faculty_name", type: 'string', mapping: "faculty.data", convert: function(val, rec) {
-            
-        }        
+        name: "participants_name", type: 'string', mapping: "participants.data", convert: function(val, rec) {}        
     }, {
         name: "title", type: 'string'        
     }, {
@@ -17,6 +15,6 @@ Ext.define('HyBrid.model.pages.presentations.Grid', {
     }, {
         name: "day", type: 'string'        
     }, {
-        name: "faculty", type: 'auto'        
+        name: "participants", type: 'auto'        
     }]
 });

@@ -26,10 +26,6 @@ Ext.define('HyBrid.view.main.content.Footer', {
             xtype: 'button',
             text: 'Contact',
             cls: "default-button"
-        }, {
-            xtype: 'button',
-            text: 'Blog',
-            cls: "default-button"
         }];           
            
         me.callParent(arguments);

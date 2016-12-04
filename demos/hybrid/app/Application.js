@@ -11,7 +11,7 @@ Ext.define('HyBrid.Application', {
     stores: [
         // TODO: add global / shared stores here
         "pages.presentations.Grid",
-        'pages.presentations.form.FacultyGrid'
+        'pages.presentations.form.ParticipantsGrid'
     ],
     
     launch: function () {

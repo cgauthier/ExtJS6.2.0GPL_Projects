@@ -6,7 +6,7 @@
 Note: Currently there are only 2 projects within this repo 
 
 -  demos/mobiledemo - http://www.claudegauthier.net/demos/MobileDemo/
--  demos/hybrid     - http://www.claudegauthier.net/demos/Hybrid/
+-  demos/hybrid     - http://www.claudegauthier.net/demos/HybridApp/
 
 ## demos/mobiledemo
 
@@ -62,7 +62,7 @@ This list is far from complete, more ideas will come to me as I go along.
 
 ## demos/mobiledemo
 
-Live Link: http://www.claudegauthier.net/demos/Hybrid/
+Live Link: http://www.claudegauthier.net/demos/HybridApp/
 
 The purpose of this is app is to demonstrate the full power of ExtJS 6.2.0.
 
@@ -86,5 +86,30 @@ The Presentations page has the following:
 
 
 Once the desktop app is at a good stage, the mobile app will be next and much of how it will work will be based on the MobileDemo project.
+
+
+## 12/04/2016 - demos/mobiledemo
+
+Live Link: http://www.claudegauthier.net/demos/HybridApp/
+
+-  Removed all menu items and have Home and Grid
+-  CSS font-changes
+-  Scrolling added to Form
+-  Removed alert on Save
+
+### To-do
+-  Sassify the styles that I shoved in all.scss
+-  write some services to make this a live demo
+-  Ability to reset all data
+-  get all widgets to correctly work
+-  add some more fields
+
+
+Note: More will come as I think about it, of course, design the mobile version, right now, it's nothing but a single panel with text.
+
+
+
+
+
 
 

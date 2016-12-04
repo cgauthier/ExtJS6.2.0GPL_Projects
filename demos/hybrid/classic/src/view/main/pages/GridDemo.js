@@ -1,24 +1,24 @@
-Ext.define('HyBrid.view.main.pages.Presentations', {
+Ext.define('HyBrid.view.main.pages.GridDemo', {
     extend: 'HyBrid.view.main.pages.Base',
-    xtype: 'pages-presentations',
+    xtype: 'pages-griddemo',
     requires: [
         'Ext.layout.container.Card',
         'Ext.toolbar.Toolbar',
-        'HyBrid.view.main.pages.PresentationsController',   
-        'HyBrid.view.main.pages.presentations.Grid',
-        'HyBrid.view.main.pages.presentations.Form'        
+        'HyBrid.view.main.pages.GridDemoController',   
+        'HyBrid.view.main.pages.griddemo.Grid',
+        'HyBrid.view.main.pages.griddemo.Form'        
     ],
-    controller: 'presentations',
+    controller: 'griddemo',
     initComponent: function() {
         var me = this;
         
         me.layout = 'card';
         
         me.items = [{
-            xtype: 'presentations-grid',
+            xtype: 'griddemo-grid',
             mainScope: me.mainScope           
         }, {
-            xtype: 'presentations-form',
+            xtype: 'griddemo-form',
             mainScope: me.mainScope           
         }];
         

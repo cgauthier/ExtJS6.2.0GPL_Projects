@@ -1,12 +1,12 @@
-Ext.define('HyBrid.view.main.pages.presentations.form.FacultyGrid', {
+Ext.define('HyBrid.view.main.pages.presentations.form.ParticipantsGrid', {
     extend: 'Ext.grid.Panel',
-    xtype: 'form-faculty-grid',
+    xtype: 'form-participants-grid',
     requires: [
     ],
     initComponent: function() {
         var me = this;
 
-        me.store = Ext.getStore('pages.presentations.form.FacultyGrid');
+        me.store = Ext.getStore('pages.presentations.form.ParticipantsGrid');
         me.cls = "project-grid-format";
         
         me.viewConfig = {
@@ -36,8 +36,6 @@ Ext.define('HyBrid.view.main.pages.presentations.form.FacultyGrid', {
                 }.bind(me.mainScope)
             }]
         }];        
-        
-        
         
         me.columns = columns;
         me.callParent(arguments);
