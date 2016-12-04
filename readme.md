@@ -60,7 +60,7 @@ This list is far from complete, more ideas will come to me as I go along.
  Obviously, this is a mobile application, so, it is best to test it with a mobile phone, however, you can use Chrome in developer/debugger mode and change your view to a mobile phone, which is what I mostly do for testing this app at this current stage of development.
  
 
-## demos/mobiledemo
+## demos/hybrid
 
 Live Link: http://www.claudegauthier.net/demos/HybridApp/
 
@@ -88,7 +88,7 @@ The Presentations page has the following:
 Once the desktop app is at a good stage, the mobile app will be next and much of how it will work will be based on the MobileDemo project.
 
 
-## 12/04/2016 - demos/mobiledemo
+## 12/04/2016 - demos/hybrid
 
 Live Link: http://www.claudegauthier.net/demos/HybridApp/
 
