@@ -3,7 +3,10 @@
 -	I'm using Sencha Cmd 6.2.1.29 for building these demo apps
 -	The projects under located under the demos directory and are using the ExtJS 6.2.0 GPL framework
 
-Note: Currently there is only 1 single project in this repo.
+Note: Currently there are only 2 projects within this repo 
+
+-  demos/mobiledemo - http://www.claudegauthier.net/demos/MobileDemo/
+-  demos/hybrid     - http://www.claudegauthier.net/demos/Hybrid/
 
 ## demos/mobiledemo
 
@@ -56,3 +59,32 @@ This list is far from complete, more ideas will come to me as I go along.
 #### Testing this app
  Obviously, this is a mobile application, so, it is best to test it with a mobile phone, however, you can use Chrome in developer/debugger mode and change your view to a mobile phone, which is what I mostly do for testing this app at this current stage of development.
  
+
+## demos/mobiledemo
+
+Live Link: http://www.claudegauthier.net/demos/Hybrid/
+
+The purpose of this is app is to demonstrate the full power of ExtJS 6.2.0.
+
+This app is a hybrid app, it will work on desktop and tablets (tablets with large resolutions) and will work with mobile phones (this is WIP, right now, there is a simple page)
+
+The desktop app is WIP and I've got a lot of work to do, but the scaffolding is nice and the injection of modules is working for all menus on the left side.
+
+The only real content is the 'Presentations' link.
+
+The Presentations page has the following:
+1.	grid
+2.	form (available via the gear icon for each row)
+3.	grid sorts by it's header
+4.	filtering will be done using textfields in the header row (WIP)
+5.	Double-Clicking a row invokes the Row Editing pluging
+6.	You can press enter when typing data and it will update the row (when editing)
+7.	In the form, the add button currently displays an alert
+8.	the form does get some data from the row it was launched from (I don't have the full JSON for this yet...)
+9.	the save presentation button will display an alert and bring back the grid (no data is saved at this point)
+10. Faculty will require a special type of sort.. the sorting for this column is incorrect.
+
+
+Once the desktop app is at a good stage, the mobile app will be next and much of how it will work will be based on the MobileDemo project.
+
+
