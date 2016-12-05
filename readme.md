@@ -117,4 +117,6 @@ flexing columns and forceFit the grid to help with resizing and allowing resizin
 
 changes to colors of buttons in form, moved ID field, modified footer class
 
+The fields which are meant to do filtering are injected practically manually, this has to change, I will dig up my ExtJS 5 filter fields plugin and make it work in 6.2
+
 
