@@ -115,5 +115,6 @@ more css fixes, now the outline in grid cell's doesn't appear any longer when cl
 
 flexing columns and forceFit the grid to help with resizing and allowing resizing to work correctly.
 
+changes to colors of buttons in form, moved ID field, modified footer class
 
 

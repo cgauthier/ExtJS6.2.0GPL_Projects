@@ -13,7 +13,7 @@ Ext.define('HyBrid.view.main.content.InnerContainer', {
             type: 'vbox',
             align: 'stretch'
         };
-        me.padding = "40 40 0 40";
+        me.padding = "20 20 0 20";
         me.margin = "0";
         me.cls = 'classic-content-innercontainer';
         me.items = [{

@@ -16,10 +16,6 @@ Ext.define('HyBrid.view.main.content.Footer', {
             xtype: 'tbfill'
         }, {
             xtype: 'button',
-            text: 'Home',
-            cls: "default-button"
-        }, {
-            xtype: 'button',
             text: 'About',
             cls: "default-button"
         }, {

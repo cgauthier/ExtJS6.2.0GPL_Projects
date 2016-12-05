@@ -37,6 +37,9 @@ Ext.define('HyBrid.view.main.pages.griddemo.Form', {
                 margin: "2 10"
             },
             items: [{
+                name: 'id',
+                fieldLabel: "ID"
+            }, {
                 name: 'title',
                 fieldLabel: "Title"
             }, {
@@ -51,19 +54,7 @@ Ext.define('HyBrid.view.main.pages.griddemo.Form', {
             }, {
                 name: 'session',
                 fieldLabel: "Session"
-            }],
-            bbar: {
-                xtype: 'toolbar',
-                items: [{
-                    xtype: 'button',
-                    text: 'Save Form',
-                    action: "save",
-                    cls: 'action-button',
-                    margin: "0 10"                
-                }],
-                margin: "0",
-                padding: "0"
-            }
+            }]
             
         }, {
             xtype: 'container',
@@ -78,15 +69,6 @@ Ext.define('HyBrid.view.main.pages.griddemo.Form', {
                 boxLabel: "Do not archive",
                 fieldCls: "form-label",
                 name: "archive"
-            }, {
-                fieldLabel: "Presentation ID",
-                labelAlign: "top",
-                xtype: 'textfield',
-                anchor: '100%',
-                cls: 'form-input-textfield',
-                labelCls: 'form-label',
-                margin: "2 10",
-                name: 'presentation_id'
             }, {
                 xtype: 'form-participants-grid',
                 anchor: '100%'
@@ -115,7 +97,21 @@ Ext.define('HyBrid.view.main.pages.griddemo.Form', {
                 }]
             }]
         }];
-        
+
+        me.bbar = {
+            xtype: 'toolbar',
+            items: [{
+                xtype: 'tbfill'
+            }, {
+                xtype: 'button',
+                text: 'Save Form',
+                action: "save",
+                cls: 'action-button',
+                margin: "0 10"                
+            }],
+            margin: "0",
+            padding: "0"
+        };        
         me.callParent(arguments);
     }
 });

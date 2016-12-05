@@ -10,7 +10,7 @@ Ext.define('HyBrid.view.main.content.innercontainer.InnerWrapper', {
         me.layout = {
             type: 'fit'
         };
-        me.padding = "30";
+        me.padding = "20";
         me.margin = "0";
         me.cls = 'classic-content-innercontainer-innerwrapper';
 

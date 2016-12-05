@@ -2,7 +2,7 @@
 body {
   font-family:Lato, Helvetica Neue, Arial, sans-serif;
   font-size: 14px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 body, .x-border-layout-ct  {
@@ -10,34 +10,34 @@ body, .x-border-layout-ct  {
 }
 
 .classic-content-container {
-  box-shadow:-5px -5px 10px #dddddd;
+  box-shadow:-4px -4px 8px #cccccc;
   border-radius: 8px!important;
 }
 
 .classic-content-innercontainer {
-  box-shadow:2px 2px 10px #eeeeee;
+  box-shadow:2px 2px 10px #dddddd;
   border-radius: 8px!important;
 }
 
 .classic-content-innercontainer-outerwrapper {
-  box-shadow:-5px -5px 10px #dddddd;
+  box-shadow:-4px -4px 8px #cccccc;
   border-radius: 8px!important;
 }
 
 .classic-content-innercontainer-innerwrapper {
-  box-shadow:2px 2px 10px #eeeeee;
+  box-shadow:2px 2px 10px #dddddd;
   border-radius: 8px!important;
 } 
 
 
 h1,h2,h3,h4,h5,h6{
     font-family:Oswald, Helvetica Neue, Arial, sans-serif;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
     color: rgb(61, 111, 24)!important;
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 36px;
 }
 
 .app-header-label {
@@ -174,7 +174,7 @@ h1 {
 
 /* merge action button and default settings where possible */
 .action-button {
-  background-color: rgb(179, 0, 0)!important;
+  background-color: rgb(61, 111, 24)!important;
   border: 0px!important;
   color: #fff;
   border-radius: 8px!important;
@@ -183,7 +183,7 @@ h1 {
 }
 
 .action-button:hover {
-  background-color: rgb(99, 0, 0)!important;
+  background-color: rgb(51, 101, 14)!important;
 }
 
 .action-button .x-btn-icon-el {
