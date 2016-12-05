@@ -113,7 +113,7 @@ fixed a bug in grid, the day column wasn't rendering.
 
 more css fixes, now the outline in grid cell's doesn't appear any longer when clicked.
 
-
+flexing columns and forceFit the grid to help with resizing and allowing resizing to work correctly.
 
 
 

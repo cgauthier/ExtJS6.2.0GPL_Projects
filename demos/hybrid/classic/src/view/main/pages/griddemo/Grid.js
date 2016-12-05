@@ -14,7 +14,8 @@ Ext.define('HyBrid.view.main.pages.griddemo.Grid', {
         me.store = Ext.getStore('pages.presentations.Grid');
         me.cls = "project-grid-format";
         me.viewConfig = {
-            stripeRows: false
+            stripeRows: false,
+            forceFit: true
         };
 
         me.disableSelection = true;
@@ -28,7 +29,7 @@ Ext.define('HyBrid.view.main.pages.griddemo.Grid', {
         var columns = [{
             dataIndex: 'title',
             header: 'Title',
-            flex: 1
+            flex: 0.7
         }, {
             dataIndex: 'start_time',
             header: 'Time',
@@ -36,15 +37,15 @@ Ext.define('HyBrid.view.main.pages.griddemo.Grid', {
         }, {
             dataIndex: 'track',
             header: 'Track',
-            width: 200
+            flex: 0.4
         }, {
             dataIndex: 'session',
             header: 'Session',
-            width: 250
+            flex: 0.4
         }, {
             dataIndex: 'participants_name',
             header: 'Participants',
-            width: 200,
+            flex: 0.4,
             renderer: function(val) {
                var str = [];
                var x, l = val.length;
@@ -56,7 +57,7 @@ Ext.define('HyBrid.view.main.pages.griddemo.Grid', {
         }, {
             dataIndex: 'room',
             header: 'Venue',
-            width: 125
+            flex: 0.3
         }, {
             dataIndex: 'day',
             header: 'Day',
