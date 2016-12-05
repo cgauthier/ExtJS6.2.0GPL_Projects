@@ -111,7 +111,7 @@ Note: More will come as I think about it, of course, design the mobile version, 
 removed annoying outline from buttons
 fixed a bug in grid, the day column wasn't rendering.
 
-
+more css fixes, now the outline in grid cell's doesn't appear any longer when clicked.
 
 
 

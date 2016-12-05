@@ -16,6 +16,8 @@ Ext.define('HyBrid.view.main.pages.griddemo.Grid', {
         me.viewConfig = {
             stripeRows: false
         };
+
+        me.disableSelection = true;
         
         var filterField = {
             xtype: 'textfield',
@@ -68,6 +70,7 @@ Ext.define('HyBrid.view.main.pages.griddemo.Grid', {
             dataIndex: '',
             header: '',
             width: 50,
+            align: "center",
             renderer: function(val, meta) {
                 meta.classes.push('action-class');
             },
