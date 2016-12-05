@@ -3,6 +3,7 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
+
 Ext.define('HyBrid.Application', {
     extend: 'Ext.app.Application',
     
@@ -15,7 +16,7 @@ Ext.define('HyBrid.Application', {
     ],
     
     launch: function () {
-        // TODO - Launch the application
+        Ext.enableFocusManager = false;
     },
 
     onAppUpdate: function () {

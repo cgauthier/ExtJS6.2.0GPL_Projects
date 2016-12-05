@@ -56,8 +56,8 @@ Ext.define('HyBrid.view.main.pages.griddemo.Grid', {
             header: 'Venue',
             width: 125
         }, {
-            dataIndex: 'Day',
-            header: 'day',
+            dataIndex: 'day',
+            header: 'Day',
             width: 60,
             renderer: function(val, meta) {
                 meta.align = "center";

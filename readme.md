@@ -107,6 +107,10 @@ Live Link: http://www.claudegauthier.net/demos/HybridApp/
 
 Note: More will come as I think about it, of course, design the mobile version, right now, it's nothing but a single panel with text.
 
+#### added this
+removed annoying outline from buttons
+fixed a bug in grid, the day column wasn't rendering.
+
 
 
 
