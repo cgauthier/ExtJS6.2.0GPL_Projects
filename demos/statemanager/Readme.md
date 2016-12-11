@@ -6,14 +6,6 @@ The purpose of this app is to evolve a comprehensive state management system whi
 
 Note that I'm also developing in parallel the same app in the ExtJS 5.1.3 Demos repo
 
-
-### What's done
-
-1.  border layout is stateful
-2.  tabs are stateful
-3.  grid columns width and position are stateful
-
-
 ### What's done
 
 1.  border layout is stateful
