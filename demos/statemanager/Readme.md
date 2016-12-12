@@ -14,10 +14,15 @@ Note that I'm also developing in parallel the same app in the ExtJS 5.1.3 Demos 
 4.	getting data to be stateful in form fields
 5.	refactored the project so that it is easier to manage and extend (12/11/2016)
 
+### In Progress
+
+6.	state should only be save and restore on-demand
+	- I've got a custom state provider based on localstorage setup, the scaffolding required I do a little bit of rejig of how the app launches itself
+	
+
 ### To do
 
 5.	having dynamic panels added and become stateful
-6.	state should only be save and restore on-demand
 7.  set up a server side provider to store to the server
 8.	keep several versions of state to save and restore on demand
 
